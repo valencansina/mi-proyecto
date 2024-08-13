@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Registrarce</title>
+</head>
+<body class="bodyOscuro">
+    <header>
+        <div id="logo">
+            <img src="../images/logoDePagina.png" alt="logoDeLaPagina" id="imagenLogo">
+            <h1>ReelRush</h1>
+            <button id="botonCalidoOscuro">cambiar a modo calido</button>
+        </div>
+        <div class="header-nav">
+            <nav id="nav">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label id="label" for="menu-toggle" class="menu-icon">&#9776;</label>
+                <label id="label2" for="menu-toggle" class="menu-icon">&#10006;</label>
+                <ul class="nav-ul">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/ranking.html">Ranking</a></li>
+                    <li><a href="../html/register.html">Participa</a></li>
+                    <li><a href="../html/registrados.html">Registrados</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2>Se parte de nuestra web y enterate de todo</h2>
+    <div class="div-form">
+        <form action="" id="formulario">
+            <input type="text" placeholder="Usuario" required>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido"required>
+            <input type="mail" placeholder="E-Mail"required>
+            <input type="password" placeholder="Contraseña"required>
+            <input type="password" placeholder="Confirmar Contraseña"required>
+            <label for="Fecha">Fecha de Nacimiento</label>
+            <input type="date" id="Fecha" placeholder="birthday" required>
+            <label for="numeroRandom">NO SOY UN ROBOT (ingrese el numero que ve en este recuadro)</label>
+            <input id="numeroRandom" type="text" readonly>
+            <input id="Respuesta" type="text" name="capcha" placeholder="Capcha" required>
+            <p>Clickeado Registrarce, usted esta de acuerdo con nuestros <a href="">Termimnos y Condiciones</a></p>
+            <div>
+                <p id="verdaderoOFalso"></p>
+            </div>
+            <button>Registrarce</button>
+        </form>
+    </div>
+    <footer>
+        <p>Seguinos en:</p>
+        <ul> 
+            <li>instagram: @Reel_Rush.</li>
+            <li>X: #ReelRush.</li>
+            <li>Soporte Tecnico: +5492494122112</li>
+        </ul>
+        <h3>Velocidad, emoción, cine: ReelRush lo tiene todo.</h3>
+    </footer>
+    <script src="../js/botoncalidoOscuro.js"></script>
+    <script src="../js/captcha.js"></script>
+</body>
+</html>
